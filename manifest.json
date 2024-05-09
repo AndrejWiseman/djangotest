@@ -19,7 +19,7 @@
       }
     ],
 
-    "start_url": "https://djangotest-kappa.vercel.app/",
+    "start_url": "djangotest-kappa.vercel.app/",
     "background_color": "#3367D6",
     "display": "standalone",
     "scope": "/",

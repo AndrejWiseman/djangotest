@@ -137,3 +137,52 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles', 'static')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+DEFAULT_CONFIG = {
+        "name": "Progressive Web Application",
+        "short_name": "PWA",
+        "theme_color": "#7820f5",
+        "background_color": "#7820f5",
+        "display": "standalone",
+        "orientation": "portrait",
+        "scope": "/",
+        "start_url": "/",
+        "icons": [
+                {
+                        "src": "/static/favicon/favicon-16x16.png",
+                        "type": "image/png",
+                        "sizes": "16x16"
+                },
+                {
+                        "src": "/static/favicon/favicon-32x32.png",
+                        "type": "image/png",
+                        "sizes": "32x32"
+                },
+                {
+                        "src": "/static/favicon/apple-touch-icon.png",
+                        "type": "image/png",
+                        "sizes": "180x180"
+                },
+                {
+                        "src": "/static/favicon/android-chrome-192x192.png",
+                        "type": "image/png",
+                        "sizes": "192x192"
+                },
+                {
+                        "src": "/static/favicon/android-chrome-1512x512.png",
+                        "type": "image/png",
+                        "sizes": "512x512"
+                }
+                ],
+        "lang": "en",
+        "dir": "ltr",
+        "description": "Progressive Web app powerd by Django",
+        "version": "1.",
+        "manifest_version": "1.0",
+        "permissions": [
+                "notifications",
+                "webRequest"
+        ],
+        "author": "PWA-django"
+}

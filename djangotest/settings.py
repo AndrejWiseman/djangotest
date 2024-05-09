@@ -171,7 +171,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # PWA_APP_DIR = 'ltr'
 # PWA_APP_LANG = 'en-US'
 
-
+# python manage.py collectstatic --noinput --clear
 
 PWA_APP_NAME = 'Django Test na Vercel'
 PWA_APP_DESCRIPTION = "Razne vezbe za Django"

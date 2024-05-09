@@ -1,10 +1,10 @@
 {% load static %}
-{% load pwa %}
 <!doctype html>
 <html lang="en">
-  <link rel="manifest" href="manifest.json">
   <head>
+    {% load pwa %}
     {% progressive_web_app_meta %}
+    <link rel="manifest" href="manifest.json">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Django static test</title>

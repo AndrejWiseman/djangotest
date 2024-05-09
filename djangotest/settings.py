@@ -130,7 +130,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles', 'static')
 
-PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/js', 'serviceworker.js')
+# PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/js', 'serviceworker.js')
 
 
 
@@ -140,114 +140,31 @@ PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/js', 'serviceworker.js'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+PWA_CONFIG = {
+        "name": "Moja Stranica za test",
+        "short_name": "Andrej",
+        "theme_color": "#7820f5",
+        "background_color": "#7820f5",
+        "display": "standalone",
+        "orientation": "portrait",
+        "scope": "/",
+        "start_url": "/",
+        "icons": [
+            {
+                "src": "/static/planeta.png",
+                "type": "image/png",
+                "sizes": "72x72"
+            }
+        ],
+        "lang": "en",
+        "dir": "ltr",
+        "description": "Ovo je test stranica za Django",
+        "version": "1.",
+        "manifest_version": "1.0",
+        "permissions": [
+            "notifications",
+            "webRequest"
+        ],
+        "author": "ByMe"
+}
 
-# PWA_APP_NAME = 'geeksforgeeks'
-# PWA_APP_DESCRIPTION = "GeeksForGeeks PWA"
-# PWA_APP_THEME_COLOR = '#000000'
-# PWA_APP_BACKGROUND_COLOR = '#ffffff'
-# PWA_APP_DISPLAY = 'standalone'
-# PWA_APP_SCOPE = '/'
-# PWA_APP_ORIENTATION = 'any'
-# PWA_APP_START_URL = '/'
-# PWA_APP_STATUS_BAR_COLOR = 'default'
-# PWA_APP_ICONS = [
-# 	{
-# 		'src': 'static/images/icon-160x160.png',
-# 		'sizes': '160x160'
-# 	}
-# ]
-# PWA_APP_ICONS_APPLE = [
-# 	{
-# 		'src': 'static/images/icon-160x160.png',
-# 		'sizes': '160x160'
-# 	}
-# ]
-# PWA_APP_SPLASH_SCREEN = [
-# 	{
-# 		'src': 'static/images/icon.png',
-# 		'media': '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)'
-# 	}
-# ]
-# PWA_APP_DIR = 'ltr'
-# PWA_APP_LANG = 'en-US'
-
-# python manage.py collectstatic --noinput --clear
-
-PWA_APP_NAME = 'Django Test na Vercel'
-PWA_APP_DESCRIPTION = "Razne vezbe za Django"
-PWA_APP_THEME_COLOR = '#0A0302'
-PWA_APP_BACKGROUND_COLOR = '#ffffff'
-PWA_APP_DISPLAY = 'standalone'
-PWA_APP_SCOPE = '/'
-PWA_APP_ORIENTATION = 'any'
-PWA_APP_START_URL = '/'
-PWA_APP_STATUS_BAR_COLOR = 'default'
-PWA_APP_ICONS = [
-    {
-        'src': '/static/favicon/favicon-16x16.png',
-        'sizes': '16x16'
-    }
-]
-PWA_APP_ICONS_APPLE = [
-    {
-        'src': '/static/favicon/apple-touch-icon.png',
-        'sizes': '160x160'
-    }
-]
-PWA_APP_SPLASH_SCREEN = [
-    {
-        'src': '/static/favicon/android-chrome-1512x512.png',
-        'media': '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)'
-    }
-]
-PWA_APP_DIR = 'ltr'
-PWA_APP_LANG = 'en-US'
-
-
-# DEFAULT_CONFIG = {
-#         "name": "Progressive Web Application",
-#         "short_name": "PWA",
-#         "theme_color": "#7820f5",
-#         "background_color": "#7820f5",
-#         "display": "standalone",
-#         "orientation": "portrait",
-#         "scope": "/",
-#         "start_url": "/",
-#         "icons": [
-#                 {
-#                         "src": "/static/favicon/favicon-16x16.png",
-#                         "type": "image/png",
-#                         "sizes": "16x16"
-#                 },
-#                 {
-#                         "src": "/static/favicon/favicon-32x32.png",
-#                         "type": "image/png",
-#                         "sizes": "32x32"
-#                 },
-#                 {
-#                         "src": "/static/favicon/apple-touch-icon.png",
-#                         "type": "image/png",
-#                         "sizes": "180x180"
-#                 },
-#                 {
-#                         "src": "/static/favicon/android-chrome-192x192.png",
-#                         "type": "image/png",
-#                         "sizes": "192x192"
-#                 },
-#                 {
-#                         "src": "/static/favicon/android-chrome-1512x512.png",
-#                         "type": "image/png",
-#                         "sizes": "512x512"
-#                 }
-#                 ],
-#         "lang": "en",
-#         "dir": "ltr",
-#         "description": "Progressive Web app powerd by Django",
-#         "version": "1.",
-#         "manifest_version": "1.0",
-#         "permissions": [
-#                 "notifications",
-#                 "webRequest"
-#         ],
-#         "author": "PWA-django"
-# }
